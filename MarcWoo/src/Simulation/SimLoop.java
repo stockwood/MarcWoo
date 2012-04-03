@@ -2,7 +2,8 @@ package Simulation;
 
 import java.awt.Frame;
 
-import gui.SimFrame;
+import javax.swing.JFrame;
+
 import gui.SimFrame2;
 
 public class SimLoop {
@@ -10,7 +11,7 @@ public class SimLoop {
 	int zustand = 0;
 	
 	public SimLoop(){
-		Frame frame = new SimFrame(800,600,this);
+		JFrame frame = new SimFrame2(800,600,this);
 		
 		
 		while(true){
