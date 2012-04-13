@@ -1,7 +1,6 @@
 package gui;
 
 import java.awt.BorderLayout;
-import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -10,32 +9,24 @@ import javax.swing.JToolBar;
 import java.awt.Canvas;
 import javax.swing.JScrollPane;
 import javax.swing.JButton;
-import java.awt.TextField;
 import javax.swing.ImageIcon;
 import javax.swing.SwingConstants;
 import java.awt.GridLayout;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import java.awt.Color;
-import javax.swing.JList;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 import javax.swing.JTextPane;
-import javax.swing.JScrollBar;
 import javax.swing.JMenu;
 import java.awt.FlowLayout;
 import javax.swing.border.EtchedBorder;
-import java.awt.GridBagLayout;
-import java.awt.GridBagConstraints;
-import java.awt.Insets;
 import java.awt.Dimension;
-import javax.swing.JSeparator;
 import java.awt.Component;
 import javax.swing.ScrollPaneConstants;
 
-import Simulation.SimLoop;
+import app.SimLoop;
 
-import java.awt.ComponentOrientation;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -99,7 +90,7 @@ public class SimFrame2 extends JFrame {
 		
 		JButton start_B = new JButton("");
 		start_B.setToolTipText("Simulation starten");
-		start_B.setIcon(new ImageIcon(SimFrame2.class.getResource("/Icons/run.png")));
+		start_B.setIcon(new ImageIcon(SimFrame2.class.getResource("/gui/graphics/run.png")));
 		toolBar.add(start_B);
 		ActionListener actionListenerStart = new ActionListener() {
 			public void actionPerformed(ActionEvent actionEvent) {
@@ -114,7 +105,7 @@ public class SimFrame2 extends JFrame {
 		pause_B.setToolTipText("Simulation pausieren");
 		toolBar.add(pause_B);
 		pause_B.setVerticalAlignment(SwingConstants.TOP);
-		pause_B.setIcon(new ImageIcon(SimFrame2.class.getResource("/Icons/pause.png")));
+		pause_B.setIcon(new ImageIcon(SimFrame2.class.getResource("/gui/graphics/pause.png")));
 		ActionListener actionListenerPause = new ActionListener() {
 			public void actionPerformed(ActionEvent actionEvent) {
 				simloop.pause();
@@ -127,7 +118,7 @@ public class SimFrame2 extends JFrame {
 		JButton reset_b = new JButton("");
 		reset_b.setToolTipText("Simulation zur\u00FCcksetzen");
 		toolBar.add(reset_b);
-		reset_b.setIcon(new ImageIcon(SimFrame2.class.getResource("/Icons/reset.png")));
+		reset_b.setIcon(new ImageIcon(SimFrame2.class.getResource("/gui/graphics/reset.png")));
 		reset_b.setVerticalAlignment(SwingConstants.TOP);
 		ActionListener actionListenerReset = new ActionListener() {
 			public void actionPerformed(ActionEvent actionEvent) {
