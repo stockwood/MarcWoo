@@ -6,5 +6,5 @@ package engine;
  */
 public interface PhysWithSpeed {
 
-    PhysVector getSpeedVector();
+    PhysVector getSpeed();
 }

@@ -8,12 +8,13 @@ abstract class PhysAbstractShape implements PhysShape {
     private PhysPoint position;
     private PhysVector speed;
     private Double coefficientOfFriction;
+    private PhysBoundingBox boundingBox;
 
-    public PhysPoint getPostionVector() {
+    public PhysPoint getPostion() {
         return this.position;
     }
 
-    public PhysVector getSpeedVector() {
+    public PhysVector getSpeed() {
         return this.speed;
     }
 
@@ -23,5 +24,9 @@ abstract class PhysAbstractShape implements PhysShape {
 
     public void setCoefficientOfFriction(Double coefficientOfFriction) {
         this.coefficientOfFriction = coefficientOfFriction;
+    }
+    
+    public PhysBoundingBox getBoundingBox() {
+        return this.boundingBox;
     }
 }

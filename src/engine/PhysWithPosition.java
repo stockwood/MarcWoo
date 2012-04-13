@@ -6,5 +6,5 @@ package engine;
  */
 interface PhysWithPosition {
 
-    PhysPoint getPostionVector();
+    PhysPoint getPostion();
 }
