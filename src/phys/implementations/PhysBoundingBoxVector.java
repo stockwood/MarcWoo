@@ -1,4 +1,8 @@
-package engine;
+package phys.implementations;
+
+import phys.PhysBoundingBox;
+import phys.PhysPoint;
+import phys.PhysVector;
 
 /**
  *
@@ -22,7 +26,7 @@ public class PhysBoundingBoxVector implements PhysBoundingBox {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    public PhysPoint getPostion() {
+    public PhysPoint getPosition() {
         return position;
     }
     

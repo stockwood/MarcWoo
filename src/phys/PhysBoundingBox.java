@@ -1,10 +1,12 @@
-package engine;
+package phys;
+
+import phys.properties.PhysWithPosition;
 
 /**
  *
  * @author Benjamin Kahlau
  */
-interface PhysBoundingBox extends PhysWithPosition {
+public interface PhysBoundingBox extends PhysWithPosition {
 
     Boolean isIn(PhysPoint point);
 

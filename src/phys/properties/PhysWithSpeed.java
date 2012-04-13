@@ -1,4 +1,6 @@
-package engine;
+package phys.properties;
+
+import phys.PhysVector;
 
 /**
  *

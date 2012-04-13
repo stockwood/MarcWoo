@@ -1,16 +1,34 @@
-package engine;
+package phys.implementations;
+
+import phys.PhysBoundingBox;
+import phys.PhysPoint;
+import phys.PhysShape;
+import phys.PhysVector;
+import java.awt.Graphics2D;
 
 /**
  *
  * @author Benjamin Kahlau
  */
 abstract class PhysAbstractShape implements PhysShape {
+
+    private String name;
     private PhysPoint position;
     private PhysVector speed;
     private Double coefficientOfFriction;
     private PhysBoundingBox boundingBox;
 
-    public PhysPoint getPostion() {
+    public void moveTo(PhysPoint point) {
+    }
+
+    public void move(PhysVector vector) {
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public PhysPoint getPosition() {
         return this.position;
     }
 
@@ -25,8 +43,10 @@ abstract class PhysAbstractShape implements PhysShape {
     public void setCoefficientOfFriction(Double coefficientOfFriction) {
         this.coefficientOfFriction = coefficientOfFriction;
     }
-    
+
     public PhysBoundingBox getBoundingBox() {
         return this.boundingBox;
     }
+
+    public abstract void draw(Graphics2D frame);
 }

@@ -1,10 +1,10 @@
-package engine;
+package phys.properties;
 
 /**
  *
  * @author Benjamin Kahlau
  */
-interface PhysWithFriction {
+public interface PhysWithFriction {
 
     Double getCoefficientOfFriction();
 

@@ -1,10 +1,10 @@
-package engine;
+package phys;
 
 /**
  *
  * @author Benjamin Kahlau
  */
-interface PhysVector {
+public interface PhysPoint {
 
     Double getX();
 
@@ -18,9 +18,5 @@ interface PhysVector {
 
     void setZ(Double z);
 
-    Double length();
-
-    PhysPoint toPoint();
-
-    PhysVector add(PhysVector other);
+    PhysVector toVector();
 }
