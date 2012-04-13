@@ -83,14 +83,7 @@ public class GuiFrame extends JFrame {
 
         canvas.setSize(canvasSizeX, canvasSizeY);
 
-        this.addComponentListener(new java.awt.event.ComponentAdapter() {
 
-            public void componentResized(java.awt.event.ComponentEvent e) {
-                canvas.setSize((int) (getWidth() - 350), (int) (getHeight() - 150));
-            }
-        });
-
-        setBounds(100, 100, x, y);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         contentPane.setLayout(new BorderLayout(0, 0));
@@ -338,5 +331,13 @@ public class GuiFrame extends JFrame {
 
         panel_10.add(canvas);
         canvas.setBackground(Color.BLACK);
+
+        setBounds(100, 100, x, y);
+        this.addComponentListener(new java.awt.event.ComponentAdapter() {
+
+            public void componentResized(java.awt.event.ComponentEvent e) {
+                canvas.setSize((int) (getWidth() - 350), (int) (getHeight() - 150));
+            }
+        });
     }
 }
