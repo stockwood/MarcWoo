@@ -37,5 +37,19 @@ public class PhysEngine {
     }
 
     public void step(Double deltatime) {
+    	updateGlobal(deltatime);
+    	for(String name : physShapes.keySet()){
+    		updateShape(deltatime, name);
+    	}
+    }
+    
+    private void updateGlobal(Double dt){
+    	
+    	
+    }
+    
+    private void updateShape(Double dt, String name){
+    	
+    	
     }
 }
