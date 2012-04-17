@@ -10,5 +10,5 @@ import phys.properties.PhysWithFriction;
  * @author Benjamin Kahlau
  */
 public interface PhysShape extends PhysWithPosition, PhysWithSpeed, PhysWithFriction, PhysWithBoundingBox {
-    
+    String getName();
 }
