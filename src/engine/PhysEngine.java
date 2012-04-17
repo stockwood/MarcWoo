@@ -7,7 +7,7 @@ import phys.PhysShape;
 
 /**
  *
- * @author Benjamin Kahlau
+ * @author Benjamin Kahlau, Berthold Wiblishauser
  */
 public class PhysEngine {
 
@@ -22,7 +22,7 @@ public class PhysEngine {
     public PhysShape getShape(String name) {
         return null;
     }
-
+    //Warte auf Parser
     public List<PhysShape> loadWerteDatei(File file) {
         return new LinkedList<PhysShape>();
     }
